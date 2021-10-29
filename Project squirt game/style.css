@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGreen: #85c232;
+    --darkGreen: #61892f;
+    --transition: all 0.5s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+    margin: 15px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.btn {
+    background: var(--darkGreen);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkGreen);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--darkGreen);
+    color: #fff;
+}
+
+.active {
+    color: var(--darkGreen)!important;
+}
+
+
+/* ******************************************* FOR HEADER STYLING (ctto)******************************************** */
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/header.jpg) center/cover no-repeat;
+    color: #fff;
+}
+
+.top-nav a {
+    color: #fff;
+}
+
+.brand-and-navs {
+    background: #000;
+    position: relative;
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    color: var(--white);
+}
+
+.brand-name {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.navs {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.navs:hover {
+    background: #fff;
+    color: #000;
+    transition: var(--transition);
+}
+
+.top-nav {
+    background: #000;
+    transform: translateY(-600px);
+    transition: var(--transition);
+}
+
+.showNav {
+    transform: translateY(0);
+}
+
+.search-icon {
+    display: none;
+}
+
+.top-nav ul li {
+    padding: 10px 0;
+}
+
+.top-nav ul a {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.top-nav ul a::after {
+    content: '';
+    height: 2px;
+    background: var(--lightGreen);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: var(--transition);
+}
+
+.top-nav ul a:hover:after {
+    width: 100px;
+}
+
+.about {
+    margin-top: -160px;
+}
+
+.about-content img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.about-img {
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--lightGreen);
+}
+
+.about-content h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+blockquote {
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
+}
+
+blockquote span {
+    margin-top: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--darkGreen);
+    color: var(--darkGreen);
+    font-weight: 300;
+    letter-spacing: 5px;
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    margin: 35px auto;
+}
